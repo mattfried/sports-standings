@@ -1,0 +1,493 @@
+.contact-title-container {
+	padding: 0;
+}
+
+.contact-title-container,
+.contact-form-container {
+	max-width: 95%;
+	margin: auto;
+}
+
+
+
+
+
+#header {
+	margin-top: 30px;
+}
+
+#footer {
+	margin-top: 30px;
+	border-top: 1px solid #eeeeee;
+	padding-top: 30px;
+	color: #777777;
+	font-weight: 300;
+}
+
+.gallery-image img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar,
+.navbar-toggle {
+	border: none;
+	background-color: white;
+}
+
+.navbar {
+	border-bottom: solid 1px #eeeeee;
+	text-align: center;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+}
+
+
+/*****************************
+	CSS FROM SPORTS-STANDINGS
+*****************************/
+
+//@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,200,100);
+
+* {
+  box-sizing: border-box;
+}
+
+#standings {
+  //font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 0.725em;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  transition: opacity 1s;
+	margin: auto;
+	width: 95%;
+}
+
+#select {
+  text-align: center;
+  //font-family: "Roboto", helvetica, arial, sans-serif;
+  margin-top: 20vh;
+	margin-bottom: 20vh;
+  opacity: 1;
+  transition: opacity 0.4s;
+	font-size: 1.25em;
+}
+
+.title {
+  display: block;
+	margin: auto;
+  padding: 5px;
+  width: 100%;
+}
+
+.conf-title {
+	font-size: 1.1em;
+  display: block;
+	margin: auto;
+  padding: 5px;
+  width: 100%;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 1.75em;
+  font-weight: 400;
+  font-style: normal;
+  //font-family: "Roboto", helvetica, arial, sans-serif;
+  text-shadow: -1px -1px 3px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  margin: 0.25em auto;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: normal;
+  //font-family: "Roboto", helvetica, arial, sans-serif;
+}
+
+#btnContainer {
+  opacity: 0;
+  transition: opacity 0.5s;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5em 1.25em;
+  border: 0.1em solid black;
+  margin: 0.5em;
+  width: 40%;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  //font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  color: black;
+  background-color: white;
+  text-align: center;
+  outline: none;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+
+/*** Table Styles **/
+
+.table {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  //height: 320px;
+	margin: 0 auto 2em auto;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+th {
+  color: #D5DDE5;;
+  background: #1b1e24;
+  border-bottom: 4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size: 1.25em;
+  font-weight: 300;
+  padding: 0.75em;
+  text-align: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+th:first-child {
+  border-top-left-radius: 3px;
+}
+
+th:last-child {
+  border-top-right-radius: 3px;
+  border-right: none;
+}
+
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color: #666B85;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr:hover td {
+  background: #4E5066;
+  color: #FFFFFF;
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+tr:nth-child(odd) td {
+  background: #EBEBEB;
+}
+
+tr:nth-child(odd):hover td {
+  background: #4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+td {
+  background:#FFFFFF;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 200;
+  font-size: 1.1em;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  padding: 0.625em 0.5em;
+  border-right: 1px solid #C1C3D1;
+}
+
+thead tr td {
+  font-weight: 400;
+	text-transform: uppercase;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 300;
+}
+
+a:hover {
+  text-decoration: underline;
+	color: inherit;
+}
+
+
+/*** Footer Styles **/
+
+#footer {
+  text-align: center;
+  margin-top: 15vh;
+}
+
+.sign-in-out {
+	list-style: none;
+}
+
+#devTag {
+  font-size: 0.75em;
+  //font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight: 300;
+}
+
+#devTag a {
+  text-decoration: underline;
+}
+
+
+
+
+/*** Media Queries **/
+
+@media screen and (min-width: 500px) {
+
+  #standings {
+    font-size: 0.85em;
+  }
+
+  td {
+    padding: 0.75em 0.625em;
+  }
+}
+
+@media screen and (min-width: 767px) {
+
+	.table, .title, .conf-title, #btnContainer {
+    max-width: 600px;
+  }
+
+	.contact-title-container,
+	.contact-form-container {
+		max-width: 600px;
+	}
+
+	#footer {
+	  margin-top: 25vh;
+	}
+}
+
+@media screen and (min-width: 900px) {
+
+  .btn {
+    width: 20%;
+  }
+
+  .table, .title, .conf-title, #btnContainer {
+    max-width: 800px;
+  }
+
+  #standings {
+    font-size: 1em;
+  }
+
+  footer {
+    margin-top: calc(100vh - (30vh + 110px));
+  }
+
+}
+
+
+
+
+/*****************************
+	ANIMATE.CSS
+*****************************/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@media (print), (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+
+
+
+@-webkit-keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}

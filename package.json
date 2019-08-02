@@ -1,0 +1,36 @@
+{
+  "name": "sport-standings",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.9.0"
+  },
+  "dependencies": {
+    "async": "2.1.4",
+    "bcrypt": "^3.0.6",
+    "cloudinary": "1.7.0",
+    "dotenv": "4.0.0",
+    "express-handlebars": "3.0.0",
+    "handlebars": "4.0.6",
+    "keystone": "4.0.0-beta.5",
+    "keystone-email": "1.0.5",
+    "lodash": "^4.13.1",
+    "moment": "2.17.1",
+    "mysportsfeeds-node": "git+https://github.com/mattfried/mysportsfeeds-node.git",
+    "node-gyp": "^5.0.3",
+    "node-pre-gyp": "^0.13.0",
+    "node-sass": "4.5.0",
+    "node-sass-middleware": "^0.11.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "3.15.0",
+    "eslint-config-keystone": "3.0.0",
+    "eslint-plugin-react": "^5.1.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node keystone.js"
+  }
+}
