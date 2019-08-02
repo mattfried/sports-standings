@@ -73,51 +73,10 @@ if (!process.env.MAILGUN_API_KEY || !process.env.MAILGUN_DOMAIN) {
 }
 
 
-// *************************
-// I SHOULD RELOCATED THE FOLLOWING CODE
-// IN A /ROUTE/ OR /MIDDLEWARE/ DIRECTORY?!?
-// *************************
-// MySportsFeeds API data request
-// https://github.com/MySportsFeeds/mysportsfeeds-node
-const config = require('./config.js');
-const MySportsFeeds = require('mysportsfeeds-node');
-const msf = new MySportsFeeds('2.0', true);
-
-msf.authenticate(config.msf_vars.api_key, 'MYSPORTSFEEDS');
-
-// Get NHL data from MySportsFeeds API and export for use in index.js
-const getData_nhl = () => {
-  return msf.getData('nhl', '2018-2019-regular', 'seasonal_standings', 'json', {
-    force: true
-  });
-};
-
-// Get NBA data from MySportsFeeds API and export for use in index.js
-const getData_nba = () => {
-  return msf.getData('nba', '2018-2019-regular', 'seasonal_standings', 'json', {
-    force: true
-  });
-};
-
-// Get NFL data from MySportsFeeds API and export for use in index.js
-const getData_nfl = () => {
-  return msf.getData('nfl', '2018-regular', 'seasonal_standings', 'json', {
-    force: true
-  });
-};
-
-// Get MLB data from MySportsFeeds API and export for use in index.js
-const getData_mlb = () => {
-  return msf.getData('mlb', '2019-regular', 'seasonal_standings', 'json', {
-    force: true
-  });
-};
-
-
 
 
 // Require data.js
-//const data = require('routes/data.js');
+const data = require('./routes/data.js');
 
 // Global variable to store the league data
 let nhlData;
@@ -127,26 +86,21 @@ let mlbData;
 
 
 // Load each league data for when client's first connect
-getData_nhl().then((result) => {
+data.getData_nhl().then((result) => {
   nhlData = result;
 });
 
-getData_nba().then((result) => {
+data.getData_nba().then((result) => {
   nbaData = result;
 });
 
-getData_nfl().then((result) => {
+data.getData_nfl().then((result) => {
   nflData = result;
 });
 
-getData_mlb().then((result) => {
+data.getData_mlb().then((result) => {
   mlbData = result;
 });
-
-// *************************
-// I SHOULD RELOCATE THE ABOVE CODE
-// IN A /ROUTE/ OR /MIDDLEWARE/ DIRECTORY?!?
-// *************************
 
 
 keystone.start({
