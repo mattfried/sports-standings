@@ -1,7 +1,7 @@
 # sports-standings
 Sports Standings website
 
-http://www.sportstandings.ca/
+https://www.sportstandings.ca/
 
 
 ## About:
