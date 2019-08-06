@@ -16,8 +16,9 @@ Enquiry.add({
 	email: { type: Types.Email, required: true },
 	phone: { type: String },
 	enquiryType: { type: Types.Select, options: [
-		{ value: 'message', label: 'Just leaving a message' },
-    { value: 'message', label: 'Providing feedback for this website' },
+		{ value: 'request', label: 'Notify me when a new season starts' },
+		{ value: 'message', label: 'Leaving a message' },
+    { value: 'message', label: 'Providing feedback' },
 		{ value: 'question', label: 'I\'ve got a question' },
 		{ value: 'other', label: 'Something else...' },
 	] },
