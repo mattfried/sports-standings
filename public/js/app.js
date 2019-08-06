@@ -1,8 +1,10 @@
 
 const socket = io();
-socket.on('hello', message => {
-  console.log(message);
-});
+
+// Used for debugging purposes
+// socket.on('hello', message => {
+//   console.log(message);
+// });
 
 
 // current year(s) season for each league

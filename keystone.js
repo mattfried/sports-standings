@@ -114,7 +114,9 @@ keystone.start({
 		  console.log('Client connection received');
 
 		  // When clients connect, send the data for each league
-			socket.emit('hello', 'hello, this is me from the server side');
+
+			// Used 'hello' transmission for debugging purposes only
+			// socket.emit('hello', 'hello, this is me from the server side');
 		  socket.emit('nhl-data', nhlData);
 		  socket.emit('nba-data', nbaData);
 		  socket.emit('nfl-data', nflData);
