@@ -274,9 +274,41 @@ a:hover {
 
 
 
+/*****************************
+	Email Modal
+*****************************/
+.modal-header {
+	padding: 2em 2em 2.75em;
+}
 
-/*** Media Queries **/
+#modalLongTitle {
+	float: left;
+}
 
+.closeModal {
+	float: right;
+}
+
+.modal-body {
+	padding: 3em 2em 2em;
+}
+
+.modal-footer {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+#submitModalBtn {
+	margin: 0.5em;
+	border: solid 0.15em black;
+}
+
+
+
+
+/*****************************
+	Media Queries
+*****************************/
 @media screen and (min-width: 500px) {
 
   #standings {
