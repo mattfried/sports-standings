@@ -5832,13 +5832,6 @@ button.close {
 #header {
   margin-top: 30px; }
 
-#footer {
-  margin-top: 30px;
-  border-top: 1px solid #eeeeee;
-  padding-top: 30px;
-  color: #777777;
-  font-weight: 300; }
-
 .gallery-image img {
   display: block;
   max-width: 100%;
@@ -6024,7 +6017,11 @@ a:hover {
 /*** Footer Styles **/
 #footer {
   text-align: center;
-  margin-top: 15vh; }
+  margin-top: 5vh;
+  border-top: 1px solid #eeeeee;
+  padding-top: 30px;
+  color: #777777;
+  font-weight: 300; }
 
 .sign-in-out {
   list-style: none; }
@@ -6037,27 +6034,14 @@ a:hover {
   text-decoration: underline; }
 
 /*****************************
-	Email Modal
+	Sign Up Form
 *****************************/
-.modal-header {
-  padding: 2em 2em 2.75em; }
-
-#modalLongTitle {
-  float: left; }
-
-.closeModal {
-  float: right; }
-
-.modal-body {
-  padding: 3em 2em 2em; }
-
-.modal-footer {
-  padding-left: 2em;
-  padding-right: 2em; }
+#signupForm {
+  max-width: 95%;
+  margin: auto; }
 
 #submitModalBtn {
-  margin: 0.5em;
-  border: solid 0.15em black; }
+  margin-left: 0; }
 
 /*****************************
 	Media Queries
@@ -6071,11 +6055,12 @@ a:hover {
 @media screen and (min-width: 767px) {
   .table, .title, .conf-title, #btnContainer {
     max-width: 600px; }
+  #signupForm {
+    margin-top: 10vh; }
   .contact-title-container,
-  .contact-form-container {
-    max-width: 600px; }
-  #footer {
-    margin-top: 25vh; } }
+  .contact-form-container,
+  #signupForm {
+    max-width: 600px; } }
 
 @media screen and (min-width: 900px) {
   .btn {
@@ -6083,9 +6068,7 @@ a:hover {
   .table, .title, .conf-title, #btnContainer {
     max-width: 800px; }
   #standings {
-    font-size: 1em; }
-  footer {
-    margin-top: calc(100vh - (30vh + 110px)); } }
+    font-size: 1em; } }
 
 /*****************************
 	ANIMATE.CSS
