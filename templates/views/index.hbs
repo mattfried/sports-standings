@@ -12,36 +12,16 @@
  <div id="standings"></div>
 
 
- <!-- Modal -->
-<div id="emailModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalLongTitle">Email Sign Up</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="close-modal">&times;</span>
-        </button>
-      </div>
-
-      <form method="post">
-        <div class="modal-body">
-          {{#if emailSubmitted}}
-            <h4>Thank You! Your email has been submitted</h4>
-          {{else}}
-            <p>Want to be notified when each new season starts? Please enter your email below!</p>
-            <input type="email" name="email" class="form-group form-control {{#if validationErrors.email}}has-error{{/if}}" placeholder="Your Email" value="{{formData.email}}">
-          {{/if}}
-        </div>
-
-        {{#if emailSubmitted}}
-        {{else}}
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="submit" id="submitModalBtn" class="btn btn-primary">Submit</button>
-        </div>
-      </form>
-      {{/if}}
-
-    </div>
-  </div>
-</div>
+ <!-- Signup Form -->
+ <form method="post">
+   <div class="form-group">
+     {{#if emailSubmitted}}
+     <h5>Thank You! We will notify you when the next season starts :)</h5>
+     {{else}}
+     <label for="exampleInputEmail1">Sign Up for Start of Season Notifications</label>
+     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" value="{{formData.email}}">
+     <small id="emailHelp" class="form-text text-muted">Don't worry, we don't spam.</small>
+     {{/if}}
+   </div>
+   <button type="submit" id="submitModalBtn" class="btn btn-primary">Submit</button>
+ </form>
