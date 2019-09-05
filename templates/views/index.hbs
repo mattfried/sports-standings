@@ -14,14 +14,14 @@
 
  <!-- Signup Form -->
  <form id="signupForm" method="post">
+   {{#if emailSubmitted}}
+   <h5>Thank You! We will notify you when the next season starts :)</h5>
+   {{else}}
    <div class="form-group">
-     {{#if emailSubmitted}}
-     <h5>Thank You! We will notify you when the next season starts :)</h5>
-     {{else}}
      <label for="exampleInputEmail1">Sign Up for Start of Season Notifications</label>
      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" value="{{formData.email}}">
      <small id="emailHelp" class="form-text text-muted">Don't worry, we don't spam.</small>
-     {{/if}}
    </div>
    <button type="submit" id="submitModalBtn" class="btn btn-primary">Submit</button>
+   {{/if}}
  </form>
