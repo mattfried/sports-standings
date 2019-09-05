@@ -1,17 +1,7 @@
-.contact-title-container {
-	padding: 0;
-}
 
-.contact-title-container,
-.contact-form-container {
-	max-width: 95%;
-	margin: auto;
-}
-
-
-
-
-
+/*****************************
+	Header
+*****************************/
 #header {
 	margin-top: 30px;
 }
@@ -35,6 +25,33 @@
 
 .navbar-brand {
 	text-transform: uppercase;
+}
+
+
+/*****************************
+	Footer
+*****************************/
+#footer {
+	text-align: center;
+	margin-top: 5vh;
+	border-top: 1px solid #eeeeee;
+	padding-top: 30px;
+	color: #777777;
+	font-weight: 300;
+}
+
+.sign-in-out {
+	list-style: none;
+}
+
+#devTag {
+  font-size: 0.75em;
+  //font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight: 300;
+}
+
+#devTag a {
+  text-decoration: underline;
 }
 
 
@@ -134,8 +151,9 @@ h2 {
 }
 
 
-/*** Table Styles **/
-
+/*****************************
+	Table Styles
+*****************************/
 .table {
   background: white;
   border-radius: 3px;
@@ -243,49 +261,32 @@ a:hover {
 }
 
 
-/*** Footer Styles **/
-
-#footer {
-
-}
-
-#footer {
-	text-align: center;
-	margin-top: 5vh;
-	border-top: 1px solid #eeeeee;
-	padding-top: 30px;
-	color: #777777;
-	font-weight: 300;
-}
-
-.sign-in-out {
-	list-style: none;
-}
-
-#devTag {
-  font-size: 0.75em;
-  //font-family: "Roboto", helvetica, arial, sans-serif;
-  font-weight: 300;
-}
-
-#devTag a {
-  text-decoration: underline;
-}
-
-
-
 /*****************************
 	Sign Up Form
 *****************************/
 #signupForm {
 	max-width: 95%;
 	margin: auto;
+	margin-top: 3em;
 }
 
 #submitModalBtn {
 	margin-left: 0;
 }
 
+
+/*****************************
+	Contact Form
+*****************************/
+.contact-title-container {
+	padding: 0;
+}
+
+.contact-title-container,
+.contact-form-container {
+	max-width: 95%;
+	margin: auto;
+}
 
 
 
@@ -310,13 +311,17 @@ a:hover {
   }
 
 	#signupForm {
-		margin-top: 10vh;
+		margin-top: 5em;
 	}
 
 	.contact-title-container,
 	.contact-form-container,
 	#signupForm {
 		max-width: 600px;
+	}
+
+	#select {
+		margin-bottom: 25vh;
 	}
 
 }
@@ -334,6 +339,11 @@ a:hover {
   #standings {
     font-size: 1em;
   }
+
+	#select {
+		margin-top: 28vh;
+		margin-bottom: 28vh;
+	}
 
 }
 
