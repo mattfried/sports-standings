@@ -22,7 +22,7 @@ exports.getData_nba = () => {
 
 // Get NFL data from MySportsFeeds API and export for use in index.js
 exports.getData_nfl = () => {
-  return msf.getData('nfl', '2018-regular', 'seasonal_standings', 'json', {
+  return msf.getData('nfl', '2019-regular', 'seasonal_standings', 'json', {
     force: true
   });
 };
