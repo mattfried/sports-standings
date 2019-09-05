@@ -13,7 +13,7 @@
 
 
  <!-- Modal -->
-<div id="emailModal" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div id="emailModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -22,16 +22,26 @@
           <span aria-hidden="true" class="close-modal">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <p>Want to be notified when each new season starts? Please enter your email below!</p>
-        <form>
-          <input action="/signup" type="email" class="form-group form-control" placeholder="Your Email">
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" id="submitModalBtn" class="btn btn-primary">Submit</button>
-      </div>
+
+      <form method="post">
+        <div class="modal-body">
+          {{#if emailSubmitted}}
+            <h4>Thank You! Your email has been submitted</h4>
+          {{else}}
+            <p>Want to be notified when each new season starts? Please enter your email below!</p>
+            <input type="email" name="email" class="form-group form-control {{#if validationErrors.email}}has-error{{/if}}" placeholder="Your Email" value="{{formData.email}}">
+          {{/if}}
+        </div>
+
+        {{#if emailSubmitted}}
+        {{else}}
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" id="submitModalBtn" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      {{/if}}
+
     </div>
   </div>
 </div>
