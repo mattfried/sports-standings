@@ -8,7 +8,7 @@ msf.authenticate(config.msf_vars.api_key, 'MYSPORTSFEEDS');
 
 // Get NHL data from MySportsFeeds API and export for use in index.js
 exports.getData_nhl = () => {
-  return msf.getData('nhl', '2018-2019-regular', 'seasonal_standings', 'json', {
+  return msf.getData('nhl', '2019-2020-regular', 'seasonal_standings', 'json', {
     force: true
   });
 };

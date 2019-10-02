@@ -8,7 +8,7 @@ const socket = io();
 
 
 // current year(s) season for each league
-const nhlSeason = '2018-2019';
+const nhlSeason = '2019-2020';
 const nbaSeason = '2018-2019';
 const nflSeason = '2019';
 const mlbSeason = '2019';
