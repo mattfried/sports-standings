@@ -15,7 +15,7 @@
     "handlebars": "4.0.6",
     "keystone": "4.0.0-beta.5",
     "keystone-email": "1.0.5",
-    "lodash": "^4.13.1",
+    "lodash": "^4.17.21",
     "moment": "2.17.1",
     "mysportsfeeds-node": "git+https://github.com/mattfried/mysportsfeeds-node.git",
     "node-gyp": "^5.0.3",
