@@ -7,7 +7,7 @@
     "npm": "6.9.0"
   },
   "dependencies": {
-    "async": "2.1.4",
+    "async": "2.6.4",
     "bcrypt": "^3.0.6",
     "cloudinary": "1.7.0",
     "dotenv": "4.0.0",
